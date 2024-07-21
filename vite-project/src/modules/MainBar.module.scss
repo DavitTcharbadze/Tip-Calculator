@@ -1,0 +1,45 @@
+.main-wrapper{
+    width: 100%;
+    height: fit-content;
+    .main-title{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        h1{
+            font-size: 33px;
+            font-family: monospace;
+            font-weight: 700px;
+            color: hsl(186, 14%, 43%);
+        }
+    }
+    .main-box{
+        width: 55%;
+        margin: auto;
+        background-color: white;
+        margin-top: 100px;
+        border-radius: 20px;
+        height: 500px;
+        box-shadow: 0px 0px 20px 0px hsl(185, 19%, 54%);
+        // .bill{
+        //     width: fit-content;
+        //     height: fit-content;
+        // }
+        // .tip{
+        //     width: fit-content;
+        //     height: fit-content;
+        // }
+        // .people{
+        //     width: fit-content;
+        //     height: fit-content;
+        // }
+        // .total{
+        //     width: fit-content;
+        //     height: fit-content;
+        // }
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    }
+}
