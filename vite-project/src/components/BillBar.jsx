@@ -8,10 +8,8 @@ const BillBar = ({ bill, setBill }) => {
 
     return (
         <div className={classes["bill-wrapper"]}>
-            <div className={classes['title-box']}>
-                <h1>Bill</h1>
-            </div>
-            <img src={Dollar} alt="Dollar Icon" />
+            <h1 className={classes['bill-title']}>Bill</h1>
+            <img className={classes['dollar-icon']} src={Dollar} alt="Dollar Icon" />
             <input 
                 value={bill} 
                 onChange={BillChangeHandler} 

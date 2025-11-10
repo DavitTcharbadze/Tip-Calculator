@@ -9,8 +9,8 @@ const PeopleBar = ({ people, setPeople }) => {
 
     return (
         <div className={classes['people-wrapper']}>
-            <h1>Number of People</h1>
-            <img src={Person} alt="Person Icon" />
+            <h1 className={classes['total-title']}>Number of People</h1>
+            <img className={classes['person-icon']} src={Person} alt="Person Icon" />
             <input 
                 value={people} 
                 onChange={PeopleChangeHandler} 

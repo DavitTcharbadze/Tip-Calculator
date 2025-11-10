@@ -14,7 +14,7 @@ function App() {
   };
 
   return (
-    <div className={classes['app-wrapper']}>
+    <>
       <MainBar 
         bill={bill}
         setBill={setBill}
@@ -24,7 +24,7 @@ function App() {
         setTip={setTip}
         reset={reset}
       />
-    </div>
+    </>
   );
 }
 

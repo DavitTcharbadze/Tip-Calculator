@@ -11,16 +11,14 @@ const TotalBar = ({ bill, people, tip, reset }) => {
                 <h3 className={classes["second-tag"]}>/ person</h3>
                 <h1>${tipAmount.toFixed(2)}</h1>
             </div>
-            <div className={classes["total"]}>
+            <div className={classes["total-amount"]}>
                 <h2>Total</h2>
                 <h3 className={classes["second-tag"]}>/ person</h3>
                 <h1>${totalAmount.toFixed(2)}</h1>
             </div>
-            <div className={classes["reset"]}>
                 <button onClick={reset} className={classes["reset-button"]}>
                     <h1>RESET</h1>
                 </button>
-            </div>
         </div>
     );
 };

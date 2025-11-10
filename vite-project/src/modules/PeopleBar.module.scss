@@ -1,17 +1,13 @@
 .people-wrapper {
-    h1 {
+    .people-title {
         font-family: monospace;
-        font-weight: 500px;
-        margin-left: 50px;
-        margin-top: 20px;
     }
     input {
         width: 430px;
-        height: 50px;
-        margin-left: 50px;
-        margin-top: 5px;   
+        height: 50px; 
         border: none;
-        background-color: hsl(189, 41%, 97%);
+        // background-color: hsl(189, 41%, 97%);
+        background-color: hsl(0, 15%, 34%);
         padding-right: 20px;
         text-align: right;
         font-size: 30px;
@@ -21,8 +17,5 @@
     }
     img {
         height: 25px;
-        position: absolute;
-        margin-left: 80px;
-        margin-top: 17px;
     }
 }
