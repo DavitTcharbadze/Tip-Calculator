@@ -2,22 +2,24 @@ import classes from '../modules/TipBar.module.scss';
 import { useState } from 'react';
 
 const TipBar = ({ setTip }) => {
-    const [customTip, setCustomTip] = useState(0);
+    const [customTip, setCustomTip] = useState("");
     const tipValues = [5, 10, 15, 25, 50];
 
     const handleCustomTipChange = (e) => {
-        const value = Number(e.target.value);
-        setCustomTip(value);
-        setTip(value);
+        const value = e.target.value;
+        if (value === "" || Number(value) >= 0) {
+            setCustomTip(value);
+            setTip(Number(value) || 0);
+        }
     };
 
     return (
-        <div className={classes['tip-wrapper']}>
-            <h1 className={classes['tip-title']}>Select Tip %</h1>
+        <>
+            <h2 className={classes['tip-title']}>Select Tip %</h2>
             <div className={classes["tip-bar"]}>
                 {tipValues.map(value => (
-                    <button key={value} onClick={() => setTip(value)} className={classes["button"]}>
-                        <h2>{value}%</h2>
+                    <button key={value} onClick={() => setTip(value)} className={classes["tip"]}>
+                        {value}%
                     </button>
                 ))}
                 <input 
@@ -28,7 +30,7 @@ const TipBar = ({ setTip }) => {
                     min="0"
                 />
             </div>
-        </div>
+        </>
     );
 };
 

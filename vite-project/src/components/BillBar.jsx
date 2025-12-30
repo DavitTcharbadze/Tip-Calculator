@@ -1,21 +1,25 @@
 import classes from '../modules/BillBar.module.scss';
-import Dollar from '../assets/images/icon-dollar.svg';
 
 const BillBar = ({ bill, setBill }) => {
+
     const BillChangeHandler = (e) => {
-        setBill(Number(e.target.value));
+        const value = e.target.value;
+        // allow empty string or numbers >= 0
+        if (value === "" || Number(value) >= 0) {
+            setBill(value);
+        }
     };
 
     return (
         <div className={classes["bill-wrapper"]}>
-            <h1 className={classes['bill-title']}>Bill</h1>
-            <img className={classes['dollar-icon']} src={Dollar} alt="Dollar Icon" />
+            <h2 className={classes['bill-title']}><b>Bill</b></h2>
             <input 
-                value={bill} 
+                value={bill} // will be "" initially
                 onChange={BillChangeHandler} 
                 className={classes["bill-input"]} 
                 type="number"
                 min="0"
+                placeholder="0" // only visible when empty
             />
         </div>
     );

@@ -1,19 +1,29 @@
 .people-wrapper {
+    padding-left: 30px;
+    padding-top: 10px;  
     .people-title {
         font-family: monospace;
+        color: hsl(184, 14%, 56%);    
     }
     input {
         width: 430px;
-        height: 50px; 
+        height: 50px;
         border: none;
-        // background-color: hsl(189, 41%, 97%);
-        background-color: hsl(0, 15%, 34%);
-        padding-right: 20px;
+        border-radius: 5px;
+
+        background-color: hsl(189, 41%, 97%);
+        background-image: url("../assets/images/icon-person.svg");
+        background-repeat: no-repeat;
+        background-position: left 0.75rem center;
+        background-size: 16px;
+
+        box-shadow: 0 0 1px 0;
         text-align: right;
         font-size: 30px;
-        border-radius: 5px;
-        color: #004744;
         font-weight: 700;
+        color: #004744;
+
+        padding-right: 15px;
     }
     img {
         height: 25px;

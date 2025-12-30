@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import MainBar from "./components/MainBar";
-import classes from './App.css';
 
 function App() {
   const [bill, setBill] = useState(0);

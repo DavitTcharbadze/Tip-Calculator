@@ -1,21 +1,32 @@
+.title{
+    font-size: 27px;
+    font-family: monospace;
+    color: hsl(183, 100%, 15%);
+    text-align: center;
+    margin: 40px;
+}
 .main-wrapper{
-    display: flex;
-    .title{
-        font-size: 33px;
-        font-family: monospace;
-        font-weight: 700px;
-        color: hsl(186, 14%, 43%);
+    display: flex;  
+    justify-content: space-evenly;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px hsl(185, 19%, 54%);
+    width: 70%;
+    height: 70vh;
+    gap: 5px;
+    .interactive-box{
+        width: 50%;
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        }
     }
-    .main-box{
-        border: solid;
-        width: 55%;
-        margin: auto;
-        background-color: white;
-        border-radius: 20px;
-        box-shadow: 0px 0px 20px 0px hsl(185, 19%, 54%);
-    }
-    input[type=number]::-webkit-inner-spin-button, 
-    input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
+    .total{
+        width: 65vh;
+        height: 86%;
+        background-color: #004744;
+        border-radius: 10px;
+        margin-top: 3%;
     }
 }
