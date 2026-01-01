@@ -1,11 +1,12 @@
-.title{
+.title {
     font-size: 27px;
     font-family: monospace;
     color: hsl(183, 100%, 15%);
     text-align: center;
     margin: 40px;
 }
-.main-wrapper{
+
+.main-wrapper {
     display: flex;  
     justify-content: space-evenly;
     margin: auto;
@@ -14,19 +15,54 @@
     box-shadow: 0px 0px 20px 0px hsl(185, 19%, 54%);
     width: 70%;
     height: 70vh;
-    .interactive-box{
+
+    .interactive-box {
         width: 50%;
         input[type=number]::-webkit-inner-spin-button, 
         input[type=number]::-webkit-outer-spin-button { 
-        -webkit-appearance: none; 
+            -webkit-appearance: none; 
         }
     }
-    .total{
+
+    .total {
         width: 67vh;
         height: 86%;
         background-color: #004744;
         border-radius: 10px;
         margin-top: 3%;
         margin-right: 10px;
+    }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .main-wrapper {
+        flex-direction: column;
+        width: 100%;
+        height: 130vh;
+        gap: 20px;
+        .interactive-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .total {
+            width: 80%;
+            height: 60vh;
+            margin: auto;
+            border-radius: 10px;
+            // padding: 5px;
+        }
+    }
+
+    h1.title {
+        font-size: 28px;
+        margin: 20px 0;
     }
 }

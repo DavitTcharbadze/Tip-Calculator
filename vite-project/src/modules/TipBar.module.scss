@@ -2,28 +2,25 @@
     font-family: monospace;
     color: hsl(184, 14%, 56%);
     padding-left: 30px;
-    padding-top: 10px; 
+    padding-top: 10px;
 }
+
 .tip-bar {
     padding-left: 25px;
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(3, 160px);
     gap: 10px;
-    }
 
     .tip {
         height: 60px;
-        width: 140px; 
-
+        width: 140px;
         display: flex;
         align-items: center;
         justify-content: center;
-
         font-size: 25px;
         font-weight: 700;
         font-family: monospace;
-
         color: white;
         background-color: #004744;
         border-radius: 5px;
@@ -37,18 +34,43 @@
         }
     }
 
-    .tip-bar input {
+    input {
         height: 60px;
         width: 135px;
-
         font-size: 25px;
         font-weight: 700;
         font-family: monospace;
-
         border-radius: 5px;
         border: none;
         text-align: center;
-
         box-shadow: 0 0 1px 0;
         background-color: hsl(189, 41%, 97%);
     }
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .tip-title {
+        margin-left: 5px;
+        margin-bottom: -20px;
+        font-size: 17px;
+    }
+    .tip-bar {  
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom: -25px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        .tip {
+            width: 100%;
+            font-size: 20px;
+            height: 50px;
+        }
+
+        input {
+            width: 97%;
+            font-size: 20px;
+            height: 50px;
+        }
+    }
+}

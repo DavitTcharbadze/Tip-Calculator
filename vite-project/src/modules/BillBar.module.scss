@@ -1,33 +1,49 @@
 .bill-wrapper {
     padding-left: 30px;
-    padding-top: 10px;   
+    padding-top: 10px;
+
     .bill-title {
         font-family: monospace;
         color: hsl(184, 14%, 56%);
     }
+
     .bill-input {
         width: 430px;
         height: 50px;
         border: none;
         border-radius: 5px;
-
         background-color: hsl(189, 41%, 97%);
         background-image: url("../assets/images/icon-dollar.svg");
         background-repeat: no-repeat;
         background-position: left 0.75rem center;
         background-size: 16px;
-
         box-shadow: 0 0 1px 0;
         text-align: right;
         font-size: 30px;
         font-weight: 700;
         color: #004744;
-
         padding-right: 15px;
-
-    }
-    .dollar-icon { 
-        height: 25px;
-        margin-right: -15px;
     }
 }
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .bill-wrapper {
+        padding-left: 0;
+    .bill-title {
+        margin-top: 20px;
+        margin-left: 35px;
+        font-size: 17px;
+    }
+    .bill-input {
+        margin-bottom: -25px;
+        background-size: 13px;
+        width: 80%;
+        font-size: 20px;
+        height: 40px;
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+}
+}
+    
