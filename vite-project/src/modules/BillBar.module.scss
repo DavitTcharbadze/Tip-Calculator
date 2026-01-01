@@ -46,4 +46,41 @@
     }
 }
 }
-    
+@media (min-width: 601px) and (max-width: 900px) {
+    .bill-wrapper {
+        padding-left: 0;
+    .bill-title {
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 17px;
+    }
+    .bill-input {
+        margin-bottom: -25px;
+        // background-size: 13px;
+        width: 80%;
+        font-size: 20px;
+        // height: 40px;
+        margin-left: 50px;
+        margin-top: -10px;
+    }
+}
+}
+@media (min-width: 901px) and (max-width: 1200px){
+    .bill-wrapper {
+        padding-left: 0;
+    .bill-title {
+        margin-top: 20px;
+        margin-left: 50px;
+        font-size: 17px;
+    }
+    .bill-input {
+        margin-bottom: -25px;
+        // background-size: 13px;
+        width: 75%;
+        font-size: 25px;
+        // height: 40px;
+        margin-left: 50px;
+        margin-top: -10px;
+    }
+}
+}

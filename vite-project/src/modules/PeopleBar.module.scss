@@ -50,3 +50,37 @@
         }
     }
 }
+@media (min-width: 601px) and (max-width: 900px){
+    .people-wrapper {
+        padding-left: 0;
+        input {
+            width: 80%;
+            font-size: 20px;
+            // height: 40px;
+            margin-left: 50px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+        .people-title {
+            margin-top: 20px;
+            margin-left: 50px;
+            font-size: 17px;
+        }
+    }
+}
+@media (min-width: 901px) and (max-width: 1200px){
+    .people-wrapper {
+        padding-left: 0;
+        .people-title {
+            margin-top: 20px;
+            margin-left: 50px;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 75%;
+            font-size: 25px;
+            margin-left: 50px;
+        }
+    }
+}

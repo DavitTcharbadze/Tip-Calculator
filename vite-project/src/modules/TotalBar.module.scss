@@ -59,3 +59,17 @@
         margin: 32px;
     }
 }
+@media (min-width: 601px) and (max-width: 900px) {
+    .tip-amount h1,
+    .total-amount h1 {
+        margin-bottom: -5px;
+    }
+
+    .total-amount{
+        margin-bottom: 30px;
+    }
+
+}
+@media (min-width: 901px) and (max-width: 1200px){
+    
+}
