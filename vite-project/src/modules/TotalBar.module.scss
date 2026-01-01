@@ -14,6 +14,9 @@
         color: rgb(0, 175, 175);
         margin-left: 270px;
         margin-top: -75px;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
     }
 }
 
@@ -41,8 +44,8 @@
     margin-top: 10px;
     width: 80%;
     height: 60px;
-    font-size: 13px;
-    font-weight: 800px;
+    font-size: 25px;
+    font-weight: 800;
     font-family: monospace;
     color: hsl(183, 100%, 15%);
     border-radius: 5px;
@@ -54,4 +57,4 @@
         transition: 0.3s;
         background-color: rgb(0, 224, 224);
     }
-}
+}       

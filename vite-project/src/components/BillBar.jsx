@@ -1,25 +1,37 @@
 import classes from '../modules/BillBar.module.scss';
 
+const MAX_BILL = 10000; // maximum allowed bill
+
 const BillBar = ({ bill, setBill }) => {
 
-    const BillChangeHandler = (e) => {
+    const billChangeHandler = (e) => {
         const value = e.target.value;
-        // allow empty string or numbers >= 0
-        if (value === "" || Number(value) >= 0) {
+
+        // allow empty
+        if (value === "") {
+            setBill("");
+            return;
+        }
+
+        const num = Number(value);
+
+        // allow numbers >= 0 and <= MAX_BILL
+        if (!isNaN(num) && num >= 0 && num <= MAX_BILL) {
             setBill(value);
         }
     };
 
     return (
-        <div className={classes["bill-wrapper"]}>
-            <h2 className={classes['bill-title']}><b>Bill</b></h2>
-            <input 
-                value={bill} // will be "" initially
-                onChange={BillChangeHandler} 
-                className={classes["bill-input"]} 
+        <div className={classes['bill-wrapper']}>
+            <h2 className={classes['bill-title']}>Bill</h2>
+            <input
                 type="number"
+                value={bill}
+                onChange={billChangeHandler}
+                placeholder="0"
                 min="0"
-                placeholder="0" // only visible when empty
+                max={MAX_BILL}
+                className={classes['bill-input']}
             />
         </div>
     );

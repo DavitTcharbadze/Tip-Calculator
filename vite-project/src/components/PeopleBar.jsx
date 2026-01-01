@@ -15,12 +15,12 @@ const PeopleBar = ({ people, setPeople }) => {
         <div className={classes['people-wrapper']}>
             <h2 className={classes['people-title']}>Number of People</h2>
             <input
-                value={people}              // EMPTY string initially
+                type="number"
+                value={people}            // starts empty
                 onChange={PeopleChangeHandler}
                 className={classes["number-input"]}
-                type="number"
                 min="1"
-                placeholder="1"             // visible when value === ""
+                placeholder="1"           // visible when empty
             />
         </div>
     );

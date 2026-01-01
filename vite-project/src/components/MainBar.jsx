@@ -5,13 +5,18 @@ import PeopleBar from '../components/PeopleBar';
 import BillBar from '../components/BillBar';
 import Total from '../components/TotalBar';
 
-const MainBar = ({ reset }) => {
+const MainBar = () => {
     
     const [bill, setBill] = useState("");
-    const [people, setPeople] = useState(1);
+    const [people, setPeople] = useState("");
     const [tip, setTip] = useState(0);
 
-    return (
+    const resetButtonFunction = () => {
+        setBill("");
+        setPeople("");
+        setTip(0);
+    }
+    return (    
         <>
             <h1 className={classes['title']}>S P L I <br /> T T E R</h1>
             <div className={classes['main-wrapper']}>
@@ -27,7 +32,7 @@ const MainBar = ({ reset }) => {
                     </div>
                 </div>
                 <div className={classes["total"]}>
-                    <Total bill={bill} people={people} tip={tip} reset={reset} />
+                    <Total bill={bill} people={people} tip={tip} reset={resetButtonFunction} />
                 </div>
             </div>
         </>
